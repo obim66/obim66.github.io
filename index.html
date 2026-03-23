@@ -1,143 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cyprian Ezeh</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cyprian Ezeh</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-      scroll-behavior: smooth;
-    }
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
 
-    body {
-      background: #0a0a0a;
-      color: #f5f5f5;
-    }
+body {
+  background: #0a0a0a;
+  color: #f5f5f5;
+}
 
-    header {
-      position: sticky;
-      top: 0;
-      background: rgba(10,10,10,0.9);
-      backdrop-filter: blur(10px);
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #1f1f1f;
-    }
+/* NAV */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  border-bottom: 1px solid #1f1f1f;
+}
 
-    nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: #aaa;
-      font-size: 0.9rem;
-    }
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #aaa;
+}
 
-    nav a:hover {
-      color: #fff;
-    }
+nav a:hover {
+  color: #fff;
+}
 
-    .hero {
-      height: 90vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 0 40px;
-    }
+/* HERO */
+.hero {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 40px;
+}
 
-    .hero h1 {
-      font-size: 3.2rem;
-      max-width: 650px;
-    }
+.hero h1 {
+  font-size: 3.2rem;
+  max-width: 650px;
+}
 
-    .hero span {
-      color: #7c3aed;
-    }
+.hero span {
+  color: #7c3aed;
+}
 
-    .hero p {
-      margin-top: 20px;
-      max-width: 500px;
-      color: #aaa;
-    }
+.hero p {
+  margin-top: 20px;
+  color: #aaa;
+  max-width: 500px;
+}
 
-    .buttons {
-      margin-top: 30px;
-    }
+.btn {
+  margin-top: 30px;
+  display: inline-block;
+  padding: 12px 22px;
+  background: #7c3aed;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+}
 
-    .btn {
-      padding: 12px 22px;
-      margin-right: 10px;
-      border-radius: 8px;
-      text-decoration: none;
-      display: inline-block;
-      transition: 0.3s;
-    }
+/* SECTIONS */
+section {
+  padding: 80px 40px;
+  max-width: 1000px;
+  margin: auto;
+}
 
-    .primary {
-      background: #7c3aed;
-      color: white;
-    }
+.card {
+  background: #111;
+  padding: 25px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
 
-    .secondary {
-      border: 1px solid #444;
-      color: #ddd;
-    }
+/* GRID */
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+}
 
-    .btn:hover {
-      transform: translateY(-3px);
-    }
-
-    section {
-      padding: 80px 40px;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    h2 {
-      font-size: 1.8rem;
-      margin-bottom: 20px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: #111;
-      padding: 20px;
-      border-radius: 12px;
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-6px);
-      background: #161616;
-    }
-
-    .links a {
-      display: block;
-      margin: 8px 0;
-      color: #7c3aed;
-      text-decoration: none;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      color: #666;
-      font-size: 0.85rem;
-      border-top: 1px solid #1f1f1f;
-    }
-  </style>
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #666;
+}
+</style>
 </head>
 
 <body>
@@ -145,61 +107,48 @@
 <header>
   <h3>Cyprian Ezeh</h3>
   <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#links">Links</a>
+    <a href="profile.html">Profile</a>
+    <a href="projects.html">Projects</a>
+    <a href="cv.html">CV</a>
+    <a href="gallery.html">Gallery</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <div class="hero">
-  <h1>Building <span>wealth</span>, creating <span>content</span>, and designing my future.</h1>
-  <p>Entrepreneurial-minded nurse focused on business, anime content, and long-term financial independence.</p>
+  <h1>Building <span>businesses</span>, creating <span>opportunities</span>, and shaping my future.</h1>
+  <p>UK-based healthcare professional with a strong focus on business development, investment, and long-term growth.</p>
 
-  <div class="buttons">
-    <a href="#projects" class="btn primary">View Projects</a>
-    <a href="#contact" class="btn secondary">Get In Touch</a>
-  </div>
+  <a href="projects.html" class="btn">View Projects</a>
 </div>
 
-<section id="about">
-  <h2>About Me</h2>
+<section>
+  <h2>About</h2>
   <div class="card">
     <p>
-      I’m Cyprian Ezeh, a UK-based healthcare professional with a strong interest in building scalable businesses.
-      I’m currently working on ventures in agriculture and launching an anime-focused content platform.
-      My goal is to create multiple income streams and achieve long-term financial freedom.
+      I am a healthcare professional based in the UK with a growing interest in entrepreneurship and long-term investment opportunities.
+      My focus is on building scalable ventures, particularly in agriculture and emerging markets, while continuously developing my skills and professional capacity.
     </p>
   </div>
 </section>
 
-<section id="projects">
-  <h2>Projects</h2>
-
+<section>
+  <h2>Current Focus</h2>
   <div class="grid">
     <div class="card">
-      <h3>Agriculture Venture</h3>
-      <p>Developing a scalable farming business in Nigeria focused on long-term growth.</p>
+      <h3>Agriculture Development</h3>
+      <p>Exploring scalable agricultural opportunities in West Africa with long-term sustainability in mind.</p>
     </div>
 
     <div class="card">
-      <h3>Anime Platform</h3>
-      <p>Building a content brand around anime reviews, analysis, and storytelling.</p>
+      <h3>Business Expansion</h3>
+      <p>Identifying and developing new income streams and investment opportunities.</p>
     </div>
 
     <div class="card">
-      <h3>Future Investments</h3>
-      <p>Exploring new business opportunities across Africa and the UK.</p>
+      <h3>Professional Growth</h3>
+      <p>Continuously improving through certifications, training, and experience.</p>
     </div>
-  </div>
-</section>
-
-<section id="links">
-  <h2>Links</h2>
-  <div class="card links">
-    <a href="#">YouTube (Coming Soon)</a>
-    <a href="#">Instagram</a>
-    <a href="#">LinkedIn</a>
   </div>
 </section>
 
@@ -211,7 +160,7 @@
 </section>
 
 <footer>
-  © 2026 Cyprian Ezeh — Built for growth.
+  © 2026 Cyprian Ezeh — Personal Brand & Professional Portfolio
 </footer>
 
 </body>
