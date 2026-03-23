@@ -27,6 +27,22 @@
 .profile-text h2 {
   margin-top: 20px;
 }
+  @media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-text {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .profile-image img {
+    width: 100%;
+    max-width: 320px;
+  }
+}
 body {
   background: #0a0a0a;
   color: #fff;
